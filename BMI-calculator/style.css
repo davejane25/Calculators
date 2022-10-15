@@ -5,7 +5,10 @@
     margin-top: 65px;
     background-color: yellow;
     padding-left: 30px;
+    align-items: center;
+   
 }
+
 #height, #weight {
     width: 150px;
     height: 25px;
