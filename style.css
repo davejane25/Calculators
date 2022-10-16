@@ -177,14 +177,14 @@ p {
     text-shadow: 1px 1px 2px #427388;
 }
 
-.header-class{
+.header-class {
     text-align: center;
     margin: auto;
     padding-top: 5vh;
     color: rgba(0, 0, 0, 0.674) !important;
 }
 
-a{
+a {
     color: rgba(0, 0, 0, 0.674);
     text-decoration: none;
 }
@@ -192,31 +192,30 @@ a{
 :root {
     font-size: 20px;
     box-sizing: inherit;
-  }
-  
-  *,
-  *:before,
-  *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
-  
-  p {
+}
+
+p {
     margin: 0;
-  }
-  
-  p:not(:last-child) {
+}
+
+p:not(:last-child) {
     margin-bottom: 1.5em;
-  }
-  
-  body {
+}
+
+body {
     color: #000000;
     background:
-      url(https://wallpapers.com/images/hd/aesthetic-ipad-gradient-jx6on8ppcty3ecaf-jx6on8ppcty3ecaf.jpg)
-      center / cover no-repeat fixed; 
-      overflow-x: hidden;
-  }
-  
-  .card {
+        url(https://wallpapers.com/images/hd/aesthetic-ipad-gradient-jx6on8ppcty3ecaf-jx6on8ppcty3ecaf.jpg) center / cover no-repeat fixed;
+    overflow-x: hidden;
+}
+
+.card {
     max-width: fit-content;
     display: flex;
     flex-direction: column;
@@ -233,9 +232,9 @@ a{
     font-family: 'Courier New', Courier, monospace;
     align-content: center;
     align-items: center;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.25);
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
@@ -243,35 +242,41 @@ a{
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388;
 }
-  
-  /* scroll down animation */
-  .feather{
+
+/* scroll down animation */
+.feather {
     animation-name: oscillate;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-play-state: running;
-  }
-  @keyframes oscillate {
-    from{
+}
+
+@keyframes oscillate {
+    from {
         translate: 0px;
     }
-    12.5%{
+
+    12.5% {
         translate: 0px 2.5px;
     }
-    25%{
-        translate: 0px 5px;
-    }
-    50%{
-        translate: 0px 10px;
-    }
-    62.5%{
-        translate: 0px 7.5px;
-    }
-    75%{
+
+    25% {
         translate: 0px 5px;
     }
 
-    to{
+    50% {
+        translate: 0px 10px;
+    }
+
+    62.5% {
+        translate: 0px 7.5px;
+    }
+
+    75% {
+        translate: 0px 5px;
+    }
+
+    to {
         translate: 0px 0px;
     }
-  }
+}
