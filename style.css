@@ -36,12 +36,11 @@ body {
 .container {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 1em;
     text-align: center;
-    align-content: space-around;
+    align-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 @media (min-width: 600px) {
@@ -52,14 +51,14 @@ body {
 
 h1 {
     /* color: #000000; */
-    font-size: 1.25em;
+    font-size: 2.5em;
     font-weight: 900;
     margin: 0 0 2em;
 }
 
-@media (min-width: 300px) {
+@media (max-width: 300px) {
     h1 {
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
 }
 
@@ -71,13 +70,13 @@ h1 {
 
 @media (min-width: 760px) {
     h1 {
-        font-size: 4.25em;
+        /* font-size: 4.25em; */
     }
 }
 
 @media (min-width: 900px) {
     h1 {
-        font-size: 5.25em;
+        /* font-size: 5.25em; */
         margin: 0 0 1em;
     }
 }
@@ -179,10 +178,9 @@ p {
 }
 
 .header-class{
-    height: 100vh;
     text-align: center;
     margin: auto;
-    padding-top: 35vh;
+    padding-top: 5vh;
     color: rgba(0, 0, 0, 0.674) !important;
 }
 
@@ -219,35 +217,32 @@ a{
   }
   
   .card {
-    max-width: 300px;
-    min-height: 200px;
+    max-width: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-  
-    width: 500px;
-    height: 300px;
+    justify-content: center;
     padding: 35px;
     margin: 40px;
-  
-    border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.45);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px 1px rgb(0 0 0 / 25%);
     color: #000000;
-  
     backdrop-filter: blur(15px);
-
     font-size: xx-large;
     text-align: center;
-    justify-content: center;
     font-family: 'Courier New', Courier, monospace;
+    align-content: center;
+    align-items: center;
   }
   
-  .card-footer {
-    font-size: 0.65em;
-    color: #446;
-  }
+  .card:hover {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
   
   /* scroll down animation */
   .feather{
