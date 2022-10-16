@@ -1,9 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900); */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
 * {
     box-sizing: inherit;
     transition-property: all;
-    transition-duration: 0.6s;
+    /* transition-duration: 0.6s; */
     transition-timing-function: ease;
 }
 
@@ -12,12 +14,14 @@ body {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
     background: #000000;
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
 }
 
 .buttons {
@@ -37,6 +41,7 @@ body {
     text-align: center;
     align-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 @media (min-width: 600px) {
@@ -46,21 +51,27 @@ body {
 }
 
 h1 {
-    color: #fff;
+    /* color: #000000; */
     font-size: 1.25em;
     font-weight: 900;
     margin: 0 0 2em;
 }
 
+@media (min-width: 300px) {
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
 @media (min-width: 450px) {
     h1 {
-        font-size: 1.75em;
+        font-size: 2.75em;
     }
 }
 
 @media (min-width: 760px) {
     h1 {
-        font-size: 3.25em;
+        font-size: 4.25em;
     }
 }
 
@@ -94,6 +105,7 @@ p {
     }
 }
 
+
 .btn {
     color: #fff;
     cursor: pointer;
@@ -122,6 +134,7 @@ p {
     border: 1px solid;
     overflow: hidden;
     position: relative;
+    margin: 0 0 2em;
 }
 
 .btn-4 span {
@@ -164,3 +177,106 @@ p {
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388;
 }
+
+.header-class{
+    height: 100vh;
+    text-align: center;
+    margin: auto;
+    padding-top: 35vh;
+    color: rgba(0, 0, 0, 0.674) !important;
+}
+
+a{
+    color: rgba(0, 0, 0, 0.674);
+    text-decoration: none;
+}
+
+:root {
+    font-size: 20px;
+    box-sizing: inherit;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  p:not(:last-child) {
+    margin-bottom: 1.5em;
+  }
+  
+  body {
+    color: #000000;
+    background:
+      url(https://wallpapers.com/images/hd/aesthetic-ipad-gradient-jx6on8ppcty3ecaf-jx6on8ppcty3ecaf.jpg)
+      center / cover no-repeat fixed; 
+      overflow-x: hidden;
+  }
+  
+  .card {
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    width: 500px;
+    height: 300px;
+    padding: 35px;
+    margin: 40px;
+  
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    color: #000000;
+  
+    backdrop-filter: blur(15px);
+
+    font-size: xx-large;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .card-footer {
+    font-size: 0.65em;
+    color: #446;
+  }
+  
+  /* scroll down animation */
+  .feather{
+    animation-name: oscillate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+  @keyframes oscillate {
+    from{
+        translate: 0px;
+    }
+    12.5%{
+        translate: 0px 2.5px;
+    }
+    25%{
+        translate: 0px 5px;
+    }
+    50%{
+        translate: 0px 10px;
+    }
+    62.5%{
+        translate: 0px 7.5px;
+    }
+    75%{
+        translate: 0px 5px;
+    }
+
+    to{
+        translate: 0px 0px;
+    }
+  }
