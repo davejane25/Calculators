@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quadratic Equation Solver</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body style="text-align: center">
+    <div class="heading">
+      <p>
+        Please enter the coefficients <strong>a</strong>, <strong>b</strong> and
+        <strong>c</strong> of a quadratic equation of the form
+        <strong>ax&#x00B2; + bx + c = 0</strong>
+      </p>
+    </div>
+    <div class="form">
+      <form name="input_form" action="javascript:validate();">
+        <input class="input" type="text" name="aterm" size="5" required /> a:
+        <br /><br />
+        <input class="input" type="text" name="bterm" size="5" required /> b:
+        <br /><br />
+        <input class="input" type="text" name="cterm" size="5" required /> c:
+        <br /><br />
+        <input class="input2" type="submit" value="Calculate" />
+      </form>
+    </div>
+
+    <p id="output_text" />
+  </body>
+</html>
