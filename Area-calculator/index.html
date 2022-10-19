@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="body">
+        <u>
+            <h1 style="margin-left: 230px;color:blueviolet ;">Area-Calculator</h1>
+        </u>
+        <div class="circle all">
+            <h1 style="color: red;">For Calculating Area Of Circle</h1>
+            <label>Enter Radius : </label>
+
+            <input type="number" name="Radius" id="Radius" placeholder="radius(in cm)">
+            <br>
+            <br>
+            <button class="cir-btn" onclick="areacircle()">Calculate Area</button>
+            <h3 id="area_circle" class="area_h3">
+
+            </h3>
+        </div>
+        <div class="triangle all">
+            <h1 style="color: red;">For Calculating Area Of Triangle</h1>
+            <label>Enter height of Triangle : </label>
+            <input type="number" name="h_tri" id="h_tri" placeholder="Height(in cm)">
+            <br>
+            <br>
+            <label>Enter Base of Triangle : </label>
+            <input type="number" name="b_tri" id="b_tri" placeholder="Base(in cm)">
+
+            <button class="tri-btn" onclick="areatriangle()">Calculate Area</button>
+            <h3 id="area_triangle" class="area_h3">
+            </h3>
+        </div>
+    </div>
+    </div>
+    <div class="quad ">
+        <h1 style="color: red;">For Calculating Area Of Quadilaterals</h1>
+        <label for="cars">Choose the Quadilateral:</label>
+        <select id="quad3">
+            <option>No Selection</option>
+            <option>Square</option>
+            <option>Rectangle/Parallelogram</option>
+            <option>Rhombus</option>
+
+        </select>
+        <button id="select" onclick="mysel()">Click to apply </button>
+        <br>
+        <div id="rectangle">
+            <label>Enter height of Quadilateral : </label>
+            <input type="number" name="h_quad" id="h_quad" placeholder="Height(in cm)">
+            <br>
+            <br>
+            <label>Enter Base of Quadilateral : </label>
+            <input type="number" name="b_quad" id="b_quad" placeholder="Base(in cm)">
+
+            <button class="tri-btn" onclick="arearect()">Calculate Area</button>
+            <h3 id="area_rect" class="area_h3">
+            </h3>
+        </div>
+        <div id="Rhombus">
+            <label>Enter diagonal 1 of Rhombus : </label>
+            <input type="number" name="h_rhom" id="h_rhom" placeholder="diagonal(in cm)">
+            <br>
+            <br>
+            <label>Enter diagonal 2 of Rhombus : </label>
+            <input type="number" name="b_rhom" id="b_rhom" placeholder="diagonal(in cm)">
+
+            <button class="tri-btn" onclick="arearhom()">Calculate Area</button>
+            <h3 id="area_rhom" class="area_h3">
+            </h3>
+        </div>
+        <div id="square">
+            <label>Enter Side of Square : </label>
+            <input type="number" name="h_quad" id="s_sqre" placeholder="Side(in cm)">
+            <br>
+            <br>
+            
+
+            <button class="tri-btn" onclick="areasqre()">Calculate Area</button>
+            <h3 id="area_sqre" class="area_h3">
+            </h3>
+        </div>
+        <div id="no"></div>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
