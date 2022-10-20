@@ -1,0 +1,67 @@
+body{
+    background-image: linear-gradient(rgb(142, 57, 139),rgb(108, 108, 230));
+   
+}
+.body{
+    margin-left: 21%;
+    margin-top: 2%;
+    
+}
+.all{
+        background-image: linear-gradient(to right, greenyellow , yellow);
+        /* display: none; */
+        width: 700px;
+        height: 250px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 10px;
+        
+      }
+
+.tri-btn{
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 12px;
+    margin-left: 280px;
+    color: red;
+    cursor: pointer;
+    background-color: aqua;
+}
+.tri-btn:hover{
+    background-color: bisque;
+    box-shadow: 2px 1px 1px solid greenyellow;
+}
+.cir-btn{
+    height: 30px;   
+    border-radius: 12px;
+    margin-left: 280px;
+    color: red;
+    cursor: pointer;
+    background-color: aqua;
+}
+.cir-btn:hover{
+    background-color: bisque;
+    box-shadow: 2px 1px 1px solid greenyellow;
+}
+.area_h3{
+    color: green;
+    margin-left: 170px;
+}
+.quad{
+    background-image: linear-gradient(to right, greenyellow , yellow);
+        /* display: none; */
+        width: 700px;
+        height: 280px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 10px;
+        margin-left: 22%;
+}
+#vol_pyramid{
+    text-align: center;
+    color: green;
+}
+
+#no{
+    display: none;
+}
