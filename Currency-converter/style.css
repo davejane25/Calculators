@@ -6,22 +6,18 @@
 }
 body {
     height: 100vh;
-    background-color: #000;
+    background: linear-gradient(#61d6f3,#ffce79);
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.h1{
+    text-align: center;
+}
 .wrapper{
-    background-color: #fff;
     width: 450px;
     padding: 10px;
     position: relative;
-}
-h1{
-    position: absolute;
-    right: 31px;
-    font-size: 28px;
-    top: 19px;
 }
 .wrapper .currency_exchange{
     width: 100%;
@@ -33,7 +29,7 @@ h1{
     height: 40px;
     font-size: 1em;
     cursor: pointer;
-    background: #ffc400;
+    background: #43bbbb;
     color: #000;
     margin: .2em 0;
     padding: 0 1em;
@@ -49,14 +45,15 @@ h1{
     outline: none;
     font-size: 1em;
     margin: .2em 0;
-    background: #ff5100;
-    color: #fff;
+    background: #ffffff;
+    color: black;
     padding: 0 1em;
 }
 .wrapper button{
     width: 30%;
     height: 40px;
-    background: #0cce06;
+    background: blue;
+    color: white;
     border: none;
     outline: none;
     font-size: 1.1em;

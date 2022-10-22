@@ -10,8 +10,12 @@
 </head>
 
 <body>
+    
     <div class="bg"></div>
     <div class="main">
+        <div class="base">
+            <h4>Binary Calculator</h4>
+          </div>
         <form name="form">
             <input id="res" type="text" class="textview" name="textview">
         </form>
@@ -19,8 +23,8 @@
             <tr>
                 <td><input class="button" type="button" value="0" onclick="insert(0)"></td>
                 <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
-                <td><input class="button" type="button" value="C" onclick="clc()"></td>
-                <td><input class="button" type="button" value="=" onclick="eql()"></td>
+                <td><input class="button" type="button" value="C" onclick="clc()" id="cll"></td>
+                <td><input class="button" type="button" value="=" onclick="eql()" id="eqll"></td>
             </tr>
             <tr>
                 <td><input class="button" type="button" value="+" onclick="insert('+')"></td>
