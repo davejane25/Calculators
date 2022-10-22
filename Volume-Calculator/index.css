@@ -1,5 +1,6 @@
 body{
-    background-image: linear-gradient(rgb(142, 57, 139),rgb(108, 108, 230));
+    /* background-image: linear-gradient(rgb(142, 57, 139),rgb(108, 108, 230)); */
+    background: linear-gradient(#61d6f3,#ffce79);
    
 }
 .body{
@@ -8,7 +9,8 @@ body{
     
 }
 .all{
-        background-image: linear-gradient(to right, greenyellow , yellow);
+        /* background-image: linear-gradient(to right, greenyellow , yellow); */
+        background: linear-gradient(#61d6f3,#ffce79);
         /* display: none; */
         width: 700px;
         height: 250px;
@@ -23,32 +25,33 @@ body{
     margin-top: 10px;
     border-radius: 12px;
     margin-left: 280px;
-    color: red;
+    color: white;
     cursor: pointer;
-    background-color: aqua;
+    background-color: blue;
 }
 .tri-btn:hover{
-    background-color: bisque;
+    background-color: rgb(14, 3, 92);
     box-shadow: 2px 1px 1px solid greenyellow;
 }
 .cir-btn{
     height: 30px;   
     border-radius: 12px;
     margin-left: 280px;
-    color: red;
+    color: rgb(252, 252, 252);
     cursor: pointer;
-    background-color: aqua;
+    background-color: blue;
 }
 .cir-btn:hover{
-    background-color: bisque;
+    background-color: rgb(19, 8, 125);
     box-shadow: 2px 1px 1px solid greenyellow;
 }
 .area_h3{
-    color: green;
+    color: rgb(12, 133, 208);
     margin-left: 170px;
 }
 .quad{
-    background-image: linear-gradient(to right, greenyellow , yellow);
+    /* background-image: linear-gradient(to right, greenyellow , yellow); */
+    background: linear-gradient(#61d6f3,#ffce79);
         /* display: none; */
         width: 700px;
         height: 280px;
@@ -59,7 +62,7 @@ body{
 }
 #vol_pyramid{
     text-align: center;
-    color: green;
+    color: rgb(12, 133, 208);
 }
 
 #no{

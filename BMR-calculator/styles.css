@@ -1,6 +1,9 @@
-﻿#allPage {
+﻿body{
+	background: linear-gradient(#61d6f3,#ffce79);
+}
+#allPage {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	color: #808080;
+	color: black;
 	width: 780px;
 	margin-right: auto;
 	margin-left: auto;
@@ -10,13 +13,13 @@ h1 {
 	font-variant: small-caps;
 	text-transform: capitalize;
 	font-weight: bold;
-	background-color: #EA8326;
-	color: #FFFFFF;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.674);
 }
 
 legend {
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-	color: #EA8326;
+	color: blue;
 	font-size: large;
 }
 footer {
