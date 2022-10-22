@@ -4,7 +4,7 @@
    
    body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #c83deb;
+    background: linear-gradient(#61d6f3,#ffce79);
     font-size: 15px;
     line-height: 1.5;
     padding: 0;
@@ -16,7 +16,7 @@
     height: auto;
     min-height:100px;
     margin: 100px auto;
-    background-color: #eee;
+    /* background-color: #eee; */
     border-radius: 5px;
    }
    .base{
@@ -34,9 +34,10 @@
     font-weight: normal;
     margin-top: 0px;
     box-shadow: 0px 2px #bababa;
-    background: white;
+    /* background: white; */
     font-size: 34px;
-    color: navy;
+    /* color: navy; */
+    color: rgba(0, 0, 0, 0.674)
    }
    .block{
     width: 135px;
@@ -54,7 +55,8 @@
     line-height: 0.5;
     letter-spacing: 0.5px;
     word-spacing: 2.7px;
-    color: #1073d0;
+    /* color: #1073d0; */
+    color: #000000;
    }
    
    input[type=text] {

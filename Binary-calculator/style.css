@@ -4,7 +4,8 @@
 }
 
 .bg {
-    background: linear-gradient(to right, #e91e63, #3151b5);
+    /* background: linear-gradient(to right, #e91e63, #3151b5); */
+    background: linear-gradient(#61d6f3,#ffce79);
     position: absolute;
     top: 0px;
     left: 0px;
@@ -28,13 +29,19 @@
     border-radius: 15px;
     border: none;
     color: white;
-    background-color: #607d8b;
+    background-color: #20272a;
     transition-duration: 0.4s;
+}
+#eqll{
+    background-color: blue;
+}
+#cll{
+    background-color: #b82f2f;
 }
 
 .button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    background: rgb(88, 153, 184);
+    background: rgb(23, 54, 74);
 }
 
 .textview {
@@ -59,3 +66,19 @@
     font-style: oblique;
     font-size: large;
 }
+.base{
+    width: 100%;
+    margin: 0;
+    display: block;
+    float: none;
+   }
+   
+   .base h4{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin: 2rem;
+    box-shadow: 0px 2px #bababa;
+    font-size: 34px;
+    color: rgba(0, 0, 0, 0.674)
+   }

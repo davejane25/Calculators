@@ -6,14 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color:rgb(129, 217, 214);
-}
-
 .calculator{
-    width: 350px;
-    height: 510px;
-    background-color: rgb(105, 131, 175);
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#61d6f3,#ffce79);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -24,14 +20,14 @@ body{
     padding: 20px 0px;
 }
 
-h2{
-    color: antiquewhite;
+h1{
+    color: rgba(0, 0, 0, 0.674);
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 label{
-    color: antiquewhite;
+    color: rgb(0, 0, 0);
     margin: 10px;
 }
 
@@ -51,12 +47,12 @@ button{
     height: 30px;
     border-radius: 5px;
     border: none;
-    color: black;
-    background-color: rgb(129, 217, 214);
+    color: rgb(255, 255, 255);
+    background-color: blue;
     font-weight: 999;
 }
 
 p{
-    color: antiquewhite;
+    color: rgb(0, 0, 0);
     margin-top: 20px;
 }

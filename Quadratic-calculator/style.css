@@ -1,6 +1,6 @@
 body {
   font-size: 1.5rem;
-  color: brown;
+  color:rgba(0, 0, 0, 0.674);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, #1699cc, #cee);
@@ -34,7 +34,7 @@ body {
   left: 35%;
 }
 .input2 {
-  background-color: #033705; /* Green */
+  background-color: blue; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -47,13 +47,14 @@ body {
   cursor: pointer;
 }
 .input2:hover {
-  background-color: #3e8e41;
+  background-color: #141e7e;
 }
 .input2:active {
-  background-color: #3e8e41;
+  background-color: #001f5d;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 #output_text {
   color: rgb(151, 19, 113);
+  font-weight: bold;
 }
