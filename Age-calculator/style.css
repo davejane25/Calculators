@@ -39,6 +39,7 @@ h1 {
 
 form {
   margin: 10px;
+  gap: 10px;
   padding-top: 10px;
 }
 
@@ -61,6 +62,14 @@ label {
   flex: wrap;
   gap: 10px;
   width: 15%;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  justify-content: center;
+  align-items: center;
 }
 input[type="text"] {
   margin: auto;
@@ -68,7 +77,8 @@ input[type="text"] {
   width: 100%;
   min-height: 40px;
   text-align: center;
-  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 #age {
@@ -164,5 +174,19 @@ footer {
   }
   #age {
     font-size: large;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  h1 {
+    font-size: medium;
+  }
+  label {
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+  }
+  #age {
+    font-size: medium;
   }
 }
