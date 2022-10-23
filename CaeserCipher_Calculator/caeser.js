@@ -27,11 +27,12 @@ var alphabet = "abcdefghijklmnopqrstuvwxyz";
         }
       }
 
-      $('#finish').val(cipherFinish);
+      // $('#finish').val(cipherFinish);
+      document.getElementById('finish').value = cipherFinish;
     }
 //in the last form row we will get the required output which id is finish(in HTML file)
     $(document).ready(function () {
-      $('#cypher').keypress(function () {
+      $('#cypher').keydown(function () {
         setTimeout(function () { runCipher(); }, 20);
       });
       $('#cypher').blur(function () {
