@@ -3,8 +3,10 @@ var alphabet = "abcdefghijklmnopqrstuvwxyz";
     var fullAlphabet = alphabet + alphabet + alphabet;
 //fullAlphabet =if user provides key more then 26,for that purpose the concatentaion of alphabet is done.
     function runCipher() {
-      var cipherText = $('#cypher').val();
-      var cipherOffset = $('#offset').val();
+      // var cipherText = $('#cypher').val();
+      var cipherText = document.getElementById('cypher').value
+      // var cipherOffset = $('#offset').val();
+      var cipherOffset = document.getElementById('offset').value
       cipherOffset = (cipherOffset % alphabet.length);
       var cipherFinish = '';
 
