@@ -33,13 +33,16 @@ var alphabet = "abcdefghijklmnopqrstuvwxyz";
 //in the last form row we will get the required output which id is finish(in HTML file)
     // $(document).ready(function () {
     document.addEventListener("DOMContentLoaded", () => {
-      $('#cypher').keydown(function () {
+      // $('#cypher').keydown(function () {
+      document.getElementById('cypher').keydown(function () {
         setTimeout(function () { runCipher(); }, 20);
       });
-      $('#cypher').blur(function () {
+      // $('#cypher').blur(function () {
+      document.getElementById('cypher').blur(function () {
         runCipher();
       });
-      $('#offset').change(function () {
+      // $('#offset').change(function () {
+      document.getElementById('offset').change(function () {
         setTimeout(runCipher(), 20);
       });
 
