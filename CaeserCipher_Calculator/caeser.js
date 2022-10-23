@@ -3,8 +3,10 @@ var alphabet = "abcdefghijklmnopqrstuvwxyz";
     var fullAlphabet = alphabet + alphabet + alphabet;
 //fullAlphabet =if user provides key more then 26,for that purpose the concatentaion of alphabet is done.
     function runCipher() {
-      var cipherText = $('#cypher').val();
-      var cipherOffset = $('#offset').val();
+      // var cipherText = $('#cypher').val();
+      var cipherText = document.getElementById('cypher').value
+      // var cipherOffset = $('#offset').val();
+      var cipherOffset = document.getElementById('offset').value
       cipherOffset = (cipherOffset % alphabet.length);
       var cipherFinish = '';
 
@@ -27,18 +29,25 @@ var alphabet = "abcdefghijklmnopqrstuvwxyz";
         }
       }
 
-      $('#finish').val(cipherFinish);
+      // $('#finish').val(cipherFinish);
+      document.getElementById('finish').value = cipherFinish;
     }
 //in the last form row we will get the required output which id is finish(in HTML file)
-    $(document).ready(function () {
-      $('#cypher').keypress(function () {
+    // $(document).ready(function () {
+    document.addEventListener("DOMContentLoaded", () => {
+      // $('#cypher').keydown(function () {
+      document.getElementById('cypher').addEventListener('click', (function () {
         setTimeout(function () { runCipher(); }, 20);
-      });
-      $('#cypher').blur(function () {
+      }));
+      // $('#cypher').blur(function () {
+      document.getElementById('cypher').addEventListener('blur', (function () {
         runCipher();
-      });
-      $('#offset').change(function () {
+      }));
+      // $('#offset').change(function () {
+      document.getElementById('offset').addEventListener('change', (function () {
         setTimeout(runCipher(), 20);
-      });
-
+      }));
+      document.getElementById('finish').addEventListener('click', (function () {
+        setTimeout(function () { runCipher(); }, 20);
+      }));
     });
