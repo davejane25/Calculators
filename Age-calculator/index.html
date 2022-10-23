@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>Age Calculator</h1></header>
+      <hr />
+
+      <form>
+        <div class="blocks">
+          <div class="input__fields">
+            <label for="date">date</label>
+            <input
+              type="text"
+              name="date"
+              id="date"
+              placeholder="DD"
+              required="required"
+              minlength="1"
+              maxlength="2"
+            />
+          </div>
+
+          <div class="input__fields">
+            <label for="month">month</label>
+            <input
+              type="text"
+              name="month"
+              id="month"
+              placeholder="MM"
+              required="required"
+              minlength="1"
+              maxlength="2"
+            />
+          </div>
+
+          <div class="input__fields">
+            <label for="year">year</label>
+            <input
+              type="text"
+              name="year"
+              id="year"
+              placeholder="YYYY"
+              required="required"
+              minlength="4"
+              maxlength="4"
+            />
+          </div>
+        </div>
+
+        <div class="sub">
+          <button
+            class="btn"
+            type="button"
+            name="submit"
+            value="Submit"
+            onclick="age()"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+
+      <footer>
+        <hr class="foot" />
+        <div id="age"></div>
+      </footer>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
