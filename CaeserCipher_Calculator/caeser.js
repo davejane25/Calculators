@@ -31,7 +31,8 @@ var alphabet = "abcdefghijklmnopqrstuvwxyz";
       document.getElementById('finish').value = cipherFinish;
     }
 //in the last form row we will get the required output which id is finish(in HTML file)
-    $(document).ready(function () {
+    // $(document).ready(function () {
+    document.addEventListener("DOMContentLoaded", () => {
       $('#cypher').keydown(function () {
         setTimeout(function () { runCipher(); }, 20);
       });
