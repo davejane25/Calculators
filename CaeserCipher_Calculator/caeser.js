@@ -34,16 +34,18 @@ var alphabet = "abcdefghijklmnopqrstuvwxyz";
     // $(document).ready(function () {
     document.addEventListener("DOMContentLoaded", () => {
       // $('#cypher').keydown(function () {
-      document.getElementById('cypher').keydown(function () {
+      document.getElementById('cypher').addEventListener('click', (function () {
         setTimeout(function () { runCipher(); }, 20);
-      });
+      }));
       // $('#cypher').blur(function () {
-      document.getElementById('cypher').blur(function () {
+      document.getElementById('cypher').addEventListener('blur', (function () {
         runCipher();
-      });
+      }));
       // $('#offset').change(function () {
-      document.getElementById('offset').change(function () {
+      document.getElementById('offset').addEventListener('change', (function () {
         setTimeout(runCipher(), 20);
-      });
-
+      }));
+      document.getElementById('finish').addEventListener('click', (function () {
+        setTimeout(function () { runCipher(); }, 20);
+      }));
     });
